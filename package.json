@@ -1,0 +1,41 @@
+{
+  "name": "gatsby-starter-storybook",
+  "description": "Gatsby storybook starter",
+  "version": "1.0.0",
+  "author": "Billy Levin",
+  "dependencies": {
+    "gatsby": "^1.9.277",
+    "gatsby-link": "^1.6.46",
+    "gatsby-plugin-react-helmet": "^2.0.11",
+    "gatsby-plugin-sass": "^1.0.26",
+    "react-helmet": "^5.2.0"
+  },
+  "keywords": [],
+  "license": "MIT",
+  "scripts": {
+    "develop": "gatsby develop",
+    "build:gatsby": "gatsby build",
+    "prefix:css": "postcss --use autoprefixer -b \"last 10 versions\" public/styles.css -o public/styles.prefix.css",
+    "compress:css": "node-sass public/styles.prefix.css public/styles.css --output-style compressed",
+    "build": "npm-run-all build:gatsby prefix:css compress:css",
+    "storybook": "start-storybook -p 9009 -c ./.storybook -s public",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@storybook/addon-actions": "3.2.12",
+    "@storybook/addon-knobs": "3.2.12",
+    "@storybook/addon-links": "3.2.12",
+    "@storybook/addon-options": "3.2.12",
+    "@storybook/addons": "3.2.12",
+    "@storybook/react": "3.2.12",
+    "autoprefixer": "^9.1.3",
+    "babel-core": "^6.26.3",
+    "babel-loader": "7.1.1",
+    "imports-loader": "^0.8.0",
+    "node-sass": "^4.9.3",
+    "npm-run-all": "^4.1.3",
+    "prettier": "^1.13.7",
+    "stylelint": "^9.5.0",
+    "stylelint-config-sass-guidelines": "^5.0.0"
+  }
+}

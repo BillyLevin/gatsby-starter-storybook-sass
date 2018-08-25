@@ -1,6 +1,6 @@
 {
-  "name": "gatsby-starter-storybook",
-  "description": "Gatsby storybook starter",
+  "name": "gatsby-starter-storybook-sass",
+  "description": "Gatsby storybook/SASS starter",
   "version": "1.0.0",
   "author": "Billy Levin",
   "dependencies": {
